@@ -17,5 +17,5 @@
     "permissions": [
         "*://twitter.com/*",
         "cookies"
-    ]
+    ]   
 }
