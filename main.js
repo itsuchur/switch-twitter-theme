@@ -1,4 +1,4 @@
-const SwitchModes = () => {
+const SwitchTheme = () => {
 
   var cookie = document.cookie.split('; ').find(row => row.startsWith('night_mode'));
 
@@ -10,7 +10,9 @@ const SwitchModes = () => {
       var cookieName = cookieParts[0];
       var cookieValue = cookieParts[1];
 
-      // Edit the cookie value
+      // Edit the cookie value depending on current Windows theme.
+      // If the current Windows theme is dark, then we set value 1 to night_mode cookie key.
+      // If the current Windows theme is white, then we set value 0 to night_mode cookie key.
 
       if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
           cookieValue = 1;
@@ -25,4 +27,4 @@ const SwitchModes = () => {
       document.cookie = cookieName + '=' + cookieValue;
 }}
 
-SwitchModes();
+SwitchTheme();
