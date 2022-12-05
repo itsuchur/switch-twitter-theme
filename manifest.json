@@ -3,6 +3,19 @@
     "manifest_version": 2,
     "version": "1.0",
     "description": "Automatically switch between dark and white Twitter themes depending on the current Windows theme.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/itsuchur/switch-twitter-theme.git"
+      },
+      "keywords": [
+        "twitter",
+        "extension"
+      ],
+      "author": "Dmitrii Efimov",
+      "bugs": {
+        "url": "https://github.com/itsuchur/switch-twitter-theme/issues"
+      },
+      "homepage": "https://github.com/itsuchur/switch-twitter-theme",
     "content_scripts": [
         {
         "matches": [
