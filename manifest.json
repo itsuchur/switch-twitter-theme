@@ -1,0 +1,22 @@
+{
+    "name": "Switch White & Dark Mode Twitter",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "Automatically switch between dark and white Twitter modes depending on the current Windows theme.",
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+    "content_scripts": [
+        {
+        "matches": [
+            "*://twitter.com/*"
+        ],
+        "js": [
+            "main.js"
+        ],
+        "run_at": "document_start",
+		"all_frames": true
+        }
+    ]
+}
+  
