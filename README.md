@@ -21,3 +21,11 @@ Once installed, the extension will automatically change the layout of Twitter de
 ## Support
 
 If you have any questions or issues with the extension, please [open an issue](https://github.com/itsuchur/switch-twitter-theme/issues).
+
+## Development
+
+The extension supports both `twitter.com` and `x.com` and follows the system color preference reported by Firefox. Pages refresh when the preference changes, or on the first visit if the saved theme differs. Cookies must be enabled for the site.
+
+Run regression tests with Node.js 18 or newer using `node --test`.
+
+For a manual check, open `about:debugging#/runtime/this-firefox`, choose **Load Temporary Add-on**, and select `manifest.json`. Visit X, change the system color preference, and verify that the page refreshes once and adopts the corresponding theme. Also check a nested route and a fresh profile without a `night_mode` cookie.
